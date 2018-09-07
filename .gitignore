@@ -3,3 +3,6 @@ package-lock.json
 .vscode/
 server/config/envar.js
 server/public
+dist/
+data/
+npm-debug.log

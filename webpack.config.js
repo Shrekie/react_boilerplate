@@ -6,6 +6,10 @@ const htmlWebpackPlugin = new HtmlWebPackPlugin({
 });
 
 module.exports = {
+  entry: "./src/index.js",
+  output: {
+    filename: "bundled.js"
+  },
   module: {
     rules: [
       {
