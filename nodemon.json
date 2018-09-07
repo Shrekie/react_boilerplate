@@ -1,0 +1,13 @@
+{
+    "verbose": true,
+    "ignore": [
+        ".git",
+        "node_modules/*",
+        ".vscode/*",
+        "dist/*",
+        "src/*",
+        "nodemon.json",
+        "data/"
+    ],
+    "ext": "js json css styl jade vue"
+  }

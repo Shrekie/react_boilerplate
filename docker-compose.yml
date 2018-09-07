@@ -1,0 +1,22 @@
+version: '2'
+services:
+  server:
+    image: node:8
+    command: npm start
+    working_dir: /app
+    volumes:
+      - .:/app
+    environment:
+      PORT: 8000
+
+    ports:
+      - "8000:8000"
+    depends_on:
+        - mongodb
+  mongodb:
+    image: mongo
+    container_name: "mongodb"
+    volumes:
+      - ./data/db:/data/db
+    ports:
+      - 27017:27017
