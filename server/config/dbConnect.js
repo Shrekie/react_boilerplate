@@ -4,9 +4,7 @@ const options = {
     useNewUrlParser: true
 };
 
-//mongoose.Promise = global.Promise;
-console.log(process.env.MONGO_URL);
-mongoose.createConnection(process.env.MONGO_URL, options, (err)=>{
+mongoose.connect(process.env.MONGO_URL, options, (err)=>{
     if(err){
         console.log('Could not connect to database: ', err);
     }
